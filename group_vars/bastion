@@ -1,3 +1,6 @@
+ssh_use_pam: true
+ssh_allow_tcp_forwarding: true
+
 groups_to_create:
   - name: webops
 

@@ -1,0 +1,8 @@
+- name: Bastion
+  become: true
+  hosts: all
+  roles:
+    - singleplatform-eng.users
+    - dev-sec.os-hardening
+    - linuxhq.yum-cron
+    - dev-sec.ssh-hardening
