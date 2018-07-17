@@ -3,6 +3,5 @@
   hosts: all
   roles:
     - singleplatform-eng.users
-    - dev-sec.os-hardening
     - linuxhq.yum-cron
     - ansible-ssh-hardening

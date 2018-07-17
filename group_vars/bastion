@@ -21,3 +21,4 @@ users:
 
 users_deleted:
   - username: ec2-user
+  - username: centos
