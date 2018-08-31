@@ -1,5 +1,5 @@
 - src: dev-sec.os-hardening
-- src: linuxhq.yum-cron
+- src: linuxhq.yum_cron
 - src: https://github.com/lazzurs/ansible-ssh-hardening
   version: feature/password_key_2fa
 - src: singleplatform-eng.users
