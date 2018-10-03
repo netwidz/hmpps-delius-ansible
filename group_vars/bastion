@@ -2,6 +2,7 @@ ssh_use_pam: true
 ssh_allow_tcp_forwarding: true
 ssh_server_password_login: true
 ssh_key_pass_2fa: true
+ssh_allow_agent_forwarding: true
 
 groups_to_create:
   - name: webops
