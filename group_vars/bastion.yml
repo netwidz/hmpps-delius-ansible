@@ -1,0 +1,17 @@
+---
+
+ssh_use_pam: true
+ssh_allow_tcp_forwarding: true
+ssh_server_password_login: true
+ssh_key_pass_2fa: true
+ssh_allow_agent_forwarding: true
+ssh_server_match_user:
+  - user: jenkins
+    rules: AuthenticationMethods "publickey"
+
+
+
+daily_download_updates: yes
+daily_apply_updates: yes
+yum_cron_clean_enabled: True
+yum_cron_clean_when: "daily"
