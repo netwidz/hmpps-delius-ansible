@@ -1,5 +1,5 @@
 [bastion]
-prod.bastion.probation.hmpps.dsd.io
+ssh.bastion-prod.probation.hmpps.dsd.io
 
 [prod]
-prod.bastion.probation.hmpps.dsd.io
+ssh.bastion-prod.probation.hmpps.dsd.io
