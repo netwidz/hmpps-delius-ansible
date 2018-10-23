@@ -1,0 +1,5 @@
+[bastion]
+prod.bastion.probation.hmpps.dsd.io
+
+[prod]
+prod.bastion.probation.hmpps.dsd.io

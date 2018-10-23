@@ -5,9 +5,17 @@ Ansible repo for instance control
 
 ## Adding users
 
-First add the user to the file
+First add the user to the file for the correct environment
 
-    group_vars/bastion
+Either
+
+    group_vars/dev
+
+or 
+
+    group_vars/prod
+
+NOTE: Users must not have the same key for both environments.
 
 Once the new user is created login to the bastion and run the
 the following to set an inital password and for the user to
@@ -23,10 +31,21 @@ First you will need all the external roles.
 
     make deps
 
-Then you will need to create a control connection to the bastion
+Then you will need to create a control connection to the environment bastion.
+Either
 
     ssh -M -S ~/.ssh/control/bastion dev.bastion.probation.hmpps.dsd.io
+ 
+or
 
-You can now use to the control connection to run the playbook
+    ssh -M -S ~/.ssh/control/bastion prod.bastion.probation.hmpps.dsd.io
 
-    make bastion
+You can now use to the control connection to run the environment playbook
+
+Either
+
+    make dev
+
+or
+
+    make prod
