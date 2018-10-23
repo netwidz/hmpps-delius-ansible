@@ -5,7 +5,7 @@ def prepare_env() {
 }
 
 def run_ansible(environment_type) {
-    sshagent (credentials: ['d508efa5-fb82-4bb2-b6cb-a3c1b803e13e']) {
+    sshagent (credentials: ['bastion-key']) {
         sh """
             set +x
             docker run --rm -v `pwd`:/home/tools/data \
@@ -13,7 +13,7 @@ def run_ansible(environment_type) {
             -v $SSH_AUTH_SOCK:/ssh-agent \
             -e SSH_AUTH_SOCK=/ssh-agent \
             mojdigitalstudio/hmpps-ansible-builder bash -c \"ansible-galaxy install -r requirements.yml && \
-             ansible-playbook -i inventory/${environment_type} bastion.yml\"
+             ansible-playbook -u jenkins --ssh-extra-args='-o StrictHostKeyChecking=no' -i inventory/${environment_type} bastion.yml\"
             set -x
         """
     }
@@ -35,9 +35,7 @@ pipeline {
 
         stage('setup') {
             steps {
-                git url: 'git@github.com:ministryofjustice/hmpps-delius-ansible.git',
-                    branch: 'master',
-                    credentialsId: 'f44bc5f1-30bd-4ab9-ad61-cc32caf1562a'
+                checkout scm
                 prepare_env()
             }
         }
