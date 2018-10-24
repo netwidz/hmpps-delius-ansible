@@ -9,7 +9,29 @@ ssh_server_match_user:
   - user: jenkins
     rules: AuthenticationMethods "publickey"
 
-
+sudo_package: sudo
+sudo_defaults:
+  - defaults: '!visiblepw'
+  - defaults: 'always_set_home'
+  - defaults: 'match_group_by_gid'
+  - defaults: 'env_reset'
+  - defaults: 'env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS"'
+  - defaults: 'env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"'
+  - defaults: 'env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"'
+  - defaults: 'env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"'
+  - defaults: 'env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"'
+  - defaults: 'secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"'
+sudo_users:
+  - name: 'root'
+    nopasswd: yes
+    commands: 'ALL'
+  - name: '%wheel'
+    commands: 'ALL'
+  - name: '%jenkins'
+    commands: 'ALL'
+    nopasswd: yes
+sudo_sudoers_file: ansible
+purge_other_sudoers_files: yes
 
 daily_download_updates: yes
 daily_apply_updates: yes
