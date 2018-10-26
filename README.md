@@ -34,11 +34,11 @@ First you will need all the external roles.
 Then you will need to create a control connection to the environment bastion.
 Either
 
-    ssh -M -S ~/.ssh/control/bastion dev.bastion.probation.hmpps.dsd.io
+    ssh -M -S ~/.ssh/control/bastion ssh.bastion-dev.probation.hmpps.dsd.io
  
 or
 
-    ssh -M -S ~/.ssh/control/bastion prod.bastion.probation.hmpps.dsd.io
+    ssh -M -S ~/.ssh/control/bastion ssh.bastion-prod.probation.hmpps.dsd.io
 
 You can now use to the control connection to run the environment playbook
 
