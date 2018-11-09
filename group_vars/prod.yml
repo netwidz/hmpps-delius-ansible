@@ -25,7 +25,7 @@ users:
     shell: /bin/bash
     update_password: on_create
  
- - username: bminnie
+  - username: bminnie
     name: "Brett Minnie"
     groups:
       - webops
