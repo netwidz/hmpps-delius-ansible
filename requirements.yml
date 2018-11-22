@@ -3,4 +3,4 @@
 - src: https://github.com/lazzurs/ansible-ssh-hardening
   version: feature/password_key_2fa
 - src: singleplatform-eng.users
-- src: franklinkim.sudo
+- src: weareinteractive.sudo
