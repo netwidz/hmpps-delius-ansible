@@ -5,4 +5,4 @@
     - singleplatform-eng.users
     - jeffwidman.yum-cron
     - ansible-ssh-hardening
-    - franklinkim.sudo
+    - weareinteractive.sudo
