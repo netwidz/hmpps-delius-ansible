@@ -6,6 +6,7 @@ groups_to_create:
 
 
 users:
+    #/dev/jenkins/hmpps/integration/user/name
   - username: hmpps_integration_test
     name: "Jenkins testing user"
     groups:
