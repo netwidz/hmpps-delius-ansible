@@ -30,6 +30,9 @@ sudo_users:
   - name: '%jenkins'
     commands: 'ALL'
     nopasswd: yes
+  - name: '%hmpps_integration_test'
+    commands: 'ALL'
+    nopasswd: yes
 sudo_sudoers_file: ansible
 purge_other_sudoers_files: yes
 
