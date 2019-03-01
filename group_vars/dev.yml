@@ -4,6 +4,7 @@ groups_to_create:
   - name: webops
   - name: jenkins
   - name: spg
+  - name: iaps
     gid: 10200
 
 
@@ -243,7 +244,7 @@ users:
   - username: hcurtis
     name: "Helen Curtis"
     groups:
-      - webops
+      - iaps
     ssh_key:
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAEAQCs8EXypC+dZda2tyjS+HXofWseXV0alwytPiNDJFLWGPiYL1D8OFc4gWEQviaI+T5OQX/bcntyJTcputLQ52Cja2Z0p2Q6HEXdLPOV80lg+l4I80Wt4BiUWkSUT2g4l5iUNaLY5Fk2z+cA3p9V6uw6wLtT+OMzptuX6Cvs2CCk78f5Qhbyac7Jeg7BljCbhHR7siIG87M2ttNnZVujppKf+Colja8dxy03KtwPE4Wf5hCSkScylpmqG2vMt+3oNX77Y+CfZWv9L7/eVg5jNWP+4FzyTbwLAjlmUcEDo8c0+nkB2qktR7IO36AoW9rdi2FvBSwCIXN4yeeS+wXF1okju8lkOkD39Cvv8UIi06qX6xRQPKydnexStrjdntEWQqgB/fuSfuCPt/6fCLE/w3d/vNwJHvHl7lOLRdaPUCCQzmFiulmxyXhNLCIo/l/EFkePfZ9fwxaqxvxXaJsHQCujCtXm0Ll6LdBgQYSPAusq3xWr3XSe6YqPOaNJgiiIARUCNup+GFLFLyvZGOj1c5ymLDs5zpe3WcD9/2IRhZQ37UNdLl8zl15jOx2s1LAc40OcpY3JMqkVdECQR8u1L0ziKnapuAdb16O26hbvlwaxyZpu6J2SPvtt7OJKr0PV5ozttPUI2dlMYpKP/Ms6P7pKfo2RV6le09o1JseRgXNlAAjhBbbt/o6n23JdwkDm1FCse0AqWBkHSbVB8LqfVpg4mj6FMo2azaP/YLWGClszbZrQPiHe/7BhcdftzeFDakN15BQE4wO+wxHW6Hl+l51GvfhArgJx6r2cT/FXjBn/nvZjcxKCfA3C/9/PYr1cL29cR5+jF8F7V7Yfpak86mAMuV0FMeMDIughooy9VL/CPH9hh6G/i/HgryCwRNDwOcycyywRymhB+OSLoPqi7KJxfZBIU1PiPA63FNw/I9NmJcMANUVjzIr+me5xBJ74gM/lu3PVjXF2unCuAMFJOl/RwlfESHEIbGnyko7tma43osudxtf4npGIaFwTN37XdTY2t1opkxAMzwUEGmfkGzlUpivcg0oX894mdyM7sEgXBRrrwQPnRFfJy/OBswOS8hZKePNcn0QNIeGYTjwX3FCVhn8Rw5DhJ3elBkezE3mJXM7yxDxu/cTqrvKs5rBLqa1bL+xK4U22aaYRMrFvQHINGPh/PUO7OhTo4JYN3DoEkWyij8/LFyeDJRwvuC4gyqaM4jna5drZTbaX/ayynSiwhCFq0qQnPg7lu5h1twX3h1iHmBrdKDfvP8fLix4hZJOboOSj0h3f797yhq8KgyigWZSVtmoFX2vCR6E8NgtBwn41xaJcP7x6rmtI1i+iT7LHOm8gWHpKdBV9YR2sG1OL helen.curtis@i2n.com"
     shell: /bin/bash
