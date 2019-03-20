@@ -4,6 +4,7 @@ groups_to_create:
   - name: webops
   - name: jenkins
   - name: spg
+  - name: docker #This will not prevent docker from installing but will add the group to instances that it doesn't exist on
   - name: iaps
     gid: 10200
 
