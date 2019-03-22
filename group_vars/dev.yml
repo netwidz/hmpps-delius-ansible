@@ -299,6 +299,15 @@ users:
     shell: /bin/bash
     update_password: on_create
 
+  - username: pmaddini
+    name: "Praveen Maddini"
+    groups:
+      - mis
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAEAQCbg/FzSamYXRXgIAvMPnEkDvt9bdTnGtnHMh8/Z+6ApRQQ8uv17FIVgj5nZLcBLBD2Ltw+Rjek9cDeFFJy6y0IFKaquTk86p9kUpcMvom0iHn/lLZNkElK9nV5apgZ0vlZ/Lo5M2liQ/c81hlKSEfnU+TiGrVyC+ceuGsoSv5EGysemZMarSMLNS5zE87X5AYYFzq+msXzcuXZQg7qiw3euVRNvPASRIuRk6UlWfkyQADwsVmrA0q4+qTRWZIgnXJQI5j6d3/rge7fjo0QQLieNlXCH8Vo5/ffCXyDBtSw663M/6xlTtjCOS50zaE7cEVh9i7Zxn/vVKJzgl8/3KVuRiVmCTEzeiUYMkzKG68Ctolpa5jgwfm3iNFP0D+hVYBmklsil7SBfNRRmBVWkQdjcBHpmwINfGO/OP4bLS+p1Z0FtIy5dVH5zxJzRiSvxMNfxiZPCwpL+iObzz9qf959AxchAVNqpIq6cWZ7ya3/r6GjipdNCaPXv/IjuKuZBRsWO/LhP93wj9d0o/l/F/RftG+pE4p1JQeFuWJbgRwREwjbAbAoXBkTlwmkBak1UyfA7IBYXMrrTv4AXE11um/I1SEgh3mnqlF/QHDY1OUGABSIs6hRS9v/JstJoG2Q8aEZxhp2Yq8I82w3cegYEgvJxoK16uBOcL0j1TkabmKXsYp5v7PvOJFfvlDFp+e1+YliM2DmqQq1qRBPHP3rmetyDoq46ewBXCXhZBPKLqYeo8O4x/jJduvaXs66sAGsHwfKNoQkSeSlKpIwqcVrqZC+RPFdV6L7dUggAa1nhepJQM5uKzgF4flSTyDPD6PeWss5tM8g/o9UEkz+kL6O388rLAWES9IWM0I+GkUiCaxTNaMr9XQG++ZoMgpwidMSfAsIZgiRZctxy88Vpouyg3Xwpab8rSrGv9n5jcFTKHUWbOGRj4EzbqwoIpOFS5Ue7iLPcurigziTBIr4eGqO9KCSIpgI9a+F/r1U3CJTZAkaIh5OTzmOftjsclv6pmCf0ZBQuG2TdOJIMivyBBvSozQd5LlqmbemhGHuDfeO0eEc1kvQAOtXMlbeifVOe+xjj50nUS0CvaEfgXdVEDqfjyLgw507CUY8z7m54cyG7m+9oWPrfP0Wxz7QCFv40dJ8tPmjm4iHJq4y84LoLjqEFHlJ2HoUJ5BtQXC3jgjW0NcUoDNq1RRvucIIFEl+O7roD9kgKl80GFmlAKSQh4O73/X1QSKi4MkSy99N7shN7yTQpDHf0ZKW+Ac3yDE8RSyEw9v0r5/TaFz1YBzBRjmocrMwJhewhLaUZoqB1EDebASCtFcWZe1LqlH4ctepOGOdGWqilFu8ekgNUGw8VYGhaOwr"
+    shell: /bin/bash
+    update_password: on_create
+
 users_deleted:
   - username: ec2-user
   - username: centos
