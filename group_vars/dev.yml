@@ -7,7 +7,7 @@ groups_to_create:
   - name: civica
   - name: iaps
   - name: mis
-    gid: 10212
+    gid: 10300
 
 
 users:
