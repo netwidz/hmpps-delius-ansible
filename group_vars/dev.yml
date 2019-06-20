@@ -4,10 +4,11 @@ groups_to_create:
   - name: webops
   - name: jenkins
   - name: spg
-    gid: 10300
+    gid: 10400
   - name: civica
   - name: iaps
   - name: mis
+    gid: 10300
   - name: dba
 
 
