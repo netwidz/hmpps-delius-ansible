@@ -3,6 +3,8 @@
 groups_to_create:
   - name: webops
   - name: jenkins
+  - name: mis
+    gid: 10300
 
 users:
   #/dev/jenkins/hmpps/integration/user/name
