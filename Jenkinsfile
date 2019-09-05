@@ -1,3 +1,9 @@
+// Parameters required for job
+// parameters:
+//     choice:
+//       name: 'environment_type' [ dev | prod ]
+//       description: 'The Bastion to configure'
+
 def prepare_env() {
     sh '''
         docker pull mojdigitalstudio/hmpps-ansible-builder:latest
@@ -22,14 +28,6 @@ def run_ansible(environment_type) {
 pipeline {
 
     agent { label "jenkins_slave" }
-
-    parameters{
-        choice(
-            choices:['dev', 'prod'],
-            description: 'Select the environment bastion you would like to configure',
-            name: 'environment_type'
-        )
-    }
 
     stages {
 
