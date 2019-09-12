@@ -17,6 +17,10 @@ or
 
 NOTE: Users must not have the same key for both environments.
 
+To create a 16k rsa key:
+    ssh-keygen -t rsa -b 16384  -C "you@youremail.com" -f hmpps-bastion-prod.key
+
+
 Once the new user is created login to the bastion and run the
 the following to set an inital password and for the user to
 change their password on next login.
