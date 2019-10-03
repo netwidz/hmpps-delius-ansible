@@ -82,6 +82,8 @@ users:
   - username: maspin
     name: "Marcus Aspin"
     groups:
+      - adm
+      - wheel
       - webops
       - dba
     ssh_key:
