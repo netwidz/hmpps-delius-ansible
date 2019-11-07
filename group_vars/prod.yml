@@ -10,7 +10,7 @@ groups_to_create:
   - name: dba
 
 users:
-  #/dev/jenkins/hmpps/integration/user/name
+  # /dev/jenkins/hmpps/integration/user/name
   - username: hmpps_integration_test
     name: "Jenkins testing user"
     groups:
@@ -20,7 +20,7 @@ users:
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACgQDZOxcwHCmp+YCJ0S3T9ONMoJ3PMPulmnQiF5F26xxBh5th3OEdQcXlZjZwSgV/wQzFlVLfYDUFLmX/drCbYH882lyWydTXHXfapBLr++fFrJusyC2vw7wXTeAC7yTqxyL7K59zMgY+gM6tNCTQU9lgku2WNtwpqoxll+S43AuyY8k+TqX+HzJgnv+PfxV/F1S8gUE13x4dipsl2AN75mnRRi35i38crNZueVRnlX1vDbaPDp+bVtUwhiEj5c1DP57yWnRwqK3GMdXnf+ZU40qcwGTqfgLDoM7NRDN+gUctHeQ10lzvpOWoTRi7zcEjBBaJ2B5fd23YShc203UikuIjwdxeJMHUI6bYnpFpRV1QP0zatQKboSyHtRgTtHicW/q+E3Ph4FWmumLXHm9Rjv6gJDXy8aKFRxVvTOnF+iC8fMnlZ7mz0D9KY64jIcB/PWA0NHTF+GnqJ3UdlHmCnILU4AS3fLgXnnqOflXousBIZqu1TXAVI8MPeOvMFfDKoB3f+Fq1Erry+VbgpiSwb15F5MhAv8fcivQj6x5r2OqQjR4+g93MP1t9dggxcxKtbP8nflS/u/Jaid78L7y0b1jTOFaiKPl/Kr93uVRI0WtAE0X/XsEnDzifK/O1Kt+IoyPoRjOptyT7R4E07UHJNYI4liEmOKjG0YTOy3uoAOY4ha71SdbDZ48bj+DyUT4hz7lPmVLOmQIpxU4gqqQCqDDnMJ5XQc65W4E1n39G/vCAf/zcBvtDSi71XhNjpOW0dyDiQrctuYUJb83P1K9txlVULCqhfPRcWFpU9tIWT3cYuaI4aOdNYSXd5TziiktgTahCHL1u5hVErmavzJp+wfjj hmpps_testing@jenkins.engineering-dev.internal"
     shell: /bin/bash
     update_password: on_create
-    automate_password: yes
+    automate_password: true
 
   - username: jenkins
     name: "Jenkins Role user"
