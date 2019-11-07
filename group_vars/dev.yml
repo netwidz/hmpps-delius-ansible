@@ -13,7 +13,7 @@ groups_to_create:
 
 
 users:
-    #/dev/jenkins/hmpps/integration/user/name
+  # /dev/jenkins/hmpps/integration/user/name
   - username: hmpps_integration_test
     name: "Jenkins testing user"
     groups:
@@ -23,7 +23,7 @@ users:
       - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACgQDZOxcwHCmp+YCJ0S3T9ONMoJ3PMPulmnQiF5F26xxBh5th3OEdQcXlZjZwSgV/wQzFlVLfYDUFLmX/drCbYH882lyWydTXHXfapBLr++fFrJusyC2vw7wXTeAC7yTqxyL7K59zMgY+gM6tNCTQU9lgku2WNtwpqoxll+S43AuyY8k+TqX+HzJgnv+PfxV/F1S8gUE13x4dipsl2AN75mnRRi35i38crNZueVRnlX1vDbaPDp+bVtUwhiEj5c1DP57yWnRwqK3GMdXnf+ZU40qcwGTqfgLDoM7NRDN+gUctHeQ10lzvpOWoTRi7zcEjBBaJ2B5fd23YShc203UikuIjwdxeJMHUI6bYnpFpRV1QP0zatQKboSyHtRgTtHicW/q+E3Ph4FWmumLXHm9Rjv6gJDXy8aKFRxVvTOnF+iC8fMnlZ7mz0D9KY64jIcB/PWA0NHTF+GnqJ3UdlHmCnILU4AS3fLgXnnqOflXousBIZqu1TXAVI8MPeOvMFfDKoB3f+Fq1Erry+VbgpiSwb15F5MhAv8fcivQj6x5r2OqQjR4+g93MP1t9dggxcxKtbP8nflS/u/Jaid78L7y0b1jTOFaiKPl/Kr93uVRI0WtAE0X/XsEnDzifK/O1Kt+IoyPoRjOptyT7R4E07UHJNYI4liEmOKjG0YTOy3uoAOY4ha71SdbDZ48bj+DyUT4hz7lPmVLOmQIpxU4gqqQCqDDnMJ5XQc65W4E1n39G/vCAf/zcBvtDSi71XhNjpOW0dyDiQrctuYUJb83P1K9txlVULCqhfPRcWFpU9tIWT3cYuaI4aOdNYSXd5TziiktgTahCHL1u5hVErmavzJp+wfjj hmpps_testing@jenkins.engineering-dev.internal"
     shell: /bin/bash
     update_password: on_create
-    automate_password: yes
+    automate_password: true
 
   - username: jenkins
     name: "Jenkins Role user"
@@ -148,8 +148,6 @@ users:
     shell: /bin/bash
     update_password: on_create
 
-
-
   - username: saggor
     name: "Semenu Aggor"
     groups:
@@ -168,10 +166,6 @@ users:
     shell: /bin/bash
     update_password: on_create
 
-
-
-
-
   - username: mfahiz
     name: "Fahiz Fairose Khan"
     groups:
@@ -189,8 +183,6 @@ users:
       - "ssh-rsa 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 dwhitham@zaizi.com"
     shell: /bin/bash
     update_password: on_create
-
-
 
   - username: rsmith
     name: "Ryan Smith"
@@ -247,7 +239,7 @@ users:
     update_password: on_create
 
   - username: nhodgkinson
-  # nicola.hodgkinson@justice.gsi.gov.uk
+    # nicola.hodgkinson@justice.gsi.gov.uk
     name: "Nicola Hodgkinson"
     groups:
       - spg
