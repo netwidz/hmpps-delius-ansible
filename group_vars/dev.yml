@@ -3,7 +3,7 @@
 groups_to_create:
   - name: webops
   - name: jenkins
-  - name: spg
+  - name: testers
     gid: 10400
   - name: civica
   - name: iaps
