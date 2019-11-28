@@ -10,6 +10,8 @@ groups_to_create:
   - name: dba
   - name: spg
     gid: 10400
+  - name: dps
+    gid: 10500
 
 users:
   # /dev/jenkins/hmpps/integration/user/name
