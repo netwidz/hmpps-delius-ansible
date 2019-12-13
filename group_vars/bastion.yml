@@ -33,6 +33,14 @@ sudo_users:
   - name: '%hmpps_integration_test'
     commands: 'ALL'
     nopasswd: yes
+  - name: '%unilink'
+    commands:
+      - 'su - oracle'
+      - 'systemctl start weblogic'
+      - 'systemctl stop weblogic'
+      - 'systemctl restart weblogic'
+      - 'systemctl status weblogic'
+    nopasswd: yes
 sudo_sudoers_file: ansible
 purge_other_sudoers_files: yes
 
