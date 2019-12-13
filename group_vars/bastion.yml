@@ -35,11 +35,11 @@ sudo_users:
     nopasswd: yes
   - name: '%unilink'
     commands:
-      - 'su - oracle'
-      - 'systemctl start weblogic'
-      - 'systemctl stop weblogic'
-      - 'systemctl restart weblogic'
-      - 'systemctl status weblogic'
+      - '/usr/bin/su - oracle'
+      - '/usr/bin/systemctl start weblogic'
+      - '/usr/bin/systemctl stop weblogic'
+      - '/usr/bin/systemctl restart weblogic'
+      - '/usr/bin/systemctl status weblogic'
     nopasswd: yes
 sudo_sudoers_file: ansible
 purge_other_sudoers_files: yes
